@@ -9,11 +9,17 @@ def main():
     ans = []
     ans.append("생성된 list : [" + ", ".join(map(str,array)) + "]")
 
+    recursive_merge_sort(array)
 
     ans.append("최종 정렬 결과: [" + ", ".join(map(str,array)) + "]")
-
     final_ans = "\n".join(ans)
     print(final_ans)
+
+def recursive_merge_sort():
+
+
+def merge():
+    
 
 
 if __name__ == "__main__":
