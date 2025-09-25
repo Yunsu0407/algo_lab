@@ -5,28 +5,7 @@ def main():
     test = False
     if test:
         array_size = 20
-        array = [
-            66,
-            31,
-            10,
-            75,
-            39,
-            6,
-            9,
-            35,
-            50,
-            81,
-            31,
-            19,
-            25,
-            44,
-            50,
-            29,
-            49,
-            69,
-            44,
-            26,
-        ]
+        array = [66, 31, 10, 75, 39, 6, 9, 35, 50, 81, 31, 19, 25, 44, 50, 29, 49, 69, 44, 26]
     else:
         array_size = int(input("생성할 랜덤 변수 개수를 입력하세요: "))
         array = random.sample(range(1, 101), array_size)
