@@ -1,6 +1,24 @@
 import random
 
 
+def main():
+    test = False
+    if test:
+        array = [78, 49, 91, 91, 46, 57, 52, 99, 73, 73]
+    else:
+        array_size = int(input("생성할 랜덤 변수 개수를 입력하세요 (최소 10): "))
+        array = [random.randint(1, 100) for _ in range(array_size)]
+
+    ans = []
+    ans.append("생성된 list : " + str(array))
+
+    sorted_arr = bucket_sort(array, ans)
+
+    ans.append("최종 정렬 결과: " + str(sorted_arr))
+    final_ans = "\n".join(ans)
+    print(final_ans)
+
+
 def bucket_sort(arr, ans):
     bucket_count = 10  # 버킷 개수 고정
     min_val, max_val = min(arr), max(arr)
@@ -36,23 +54,6 @@ def bucket_sort(arr, ans):
         sorted_arr.extend(b)
 
     return sorted_arr
-
-
-def main():
-    test = True
-    if test:
-        array = [78, 49, 91, 91, 46, 57, 52, 99, 73, 73]
-    else:
-        array_size = int(input("생성할 랜덤 변수 개수를 입력하세요 (최소 10): "))
-        array = [random.randint(1, 100) for _ in range(array_size)]
-
-    ans = []
-    ans.append("생성된 list : " + str(array))
-
-    sorted_arr = bucket_sort(array, ans)
-
-    ans.append("최종 정렬 결과: " + str(sorted_arr))
-    print("\n".join(ans))
 
 
 if __name__ == "__main__":

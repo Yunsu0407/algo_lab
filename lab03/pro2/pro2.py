@@ -2,9 +2,8 @@ import random
 
 
 def main():
-    test = True
+    test = False
     if test:
-        array_size = 10
         array = [4, 8, 4, 4, 4, 2, 7, 1, 3, 5]
     else:
         array_size = int(input("생성할 랜덤 변수 개수를 입력하세요 (최소 10): "))

@@ -2,9 +2,8 @@ import random
 
 
 def main():
-    test = True
+    test = False
     if test:
-        array_size = 10
         array = [63, 86, 47, 89, 76, 42, 69, 35, 11, 36]
     else:
         array_size = int(input("생성할 랜덤 변수 개수를 입력하세요: "))
@@ -16,7 +15,6 @@ def main():
     sorted_array = heap_sort(array, ans)
 
     ans.append("최종 정렬 결과: [" + ", ".join(map(str, sorted_array)) + "]")
-
     final_ans = "\n".join(ans)
     print(final_ans)
 

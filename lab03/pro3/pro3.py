@@ -2,9 +2,8 @@ import random
 
 
 def main():
-    test = True
+    test = False
     if test:
-        array_size = 20
         array = [
             4785,
             8642,
