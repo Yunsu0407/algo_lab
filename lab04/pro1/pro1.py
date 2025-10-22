@@ -3,12 +3,12 @@ import operator
 
 
 def main():
-    test = True
+    test = False
     if test:
         array = [87, 4, 262, 746, 338, 864, 965, 691, 29, 851]
     else:
         array_size = int(input("생성할 랜덤 변수 개수를 입력하세요: "))
-        array = random.sample(range(1, 101), array_size)
+        array = random.sample(range(1, 1000), array_size)
 
     ans = []
     ans.append("data list : [" + ", ".join(map(str, array)) + "]")
