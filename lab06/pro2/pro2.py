@@ -1,5 +1,5 @@
 def main():
-    test = True
+    test = False
     txt_ex = "Human Computer Interaction Lab, Jin-Woo Jung, Algorithm Lab Work6"  # text of example
     if test:
         txt_tg = "Work6"  # text of target
